@@ -5,79 +5,155 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fajar Rivaldi | Portfolio</title>
   <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #2980b9;
+      --bg: #f5f7fa;
+      --text: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background-color: #f8f8f8;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
     }
-    header, footer {
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    header {
       text-align: center;
+      padding-top: 3rem;
     }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent);
+      margin-bottom: 1rem;
+    }
+
     h1 {
-      margin-bottom: 0.3rem;
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+      color: var(--primary);
     }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    nav {
+      margin: 1.5rem 0;
+    }
+
     nav a {
-      margin: 0 10px;
+      margin: 0 1rem;
       text-decoration: none;
-      color: #0366d6;
+      color: var(--accent);
+      font-weight: 500;
     }
+
     section {
-      margin-bottom: 2rem;
+      margin: 3rem 0;
     }
+
+    h2 {
+      color: var(--primary);
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.4rem;
+    }
+
     ul {
-      padding-left: 1rem;
+      list-style: disc;
+      margin-left: 1.5rem;
     }
+
     a {
-      color: #0366d6;
+      color: var(--accent);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eaeaea;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+
+    .social-icons a {
+      margin: 0 0.4rem;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: var(--accent);
     }
   </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <header>
-    <h1>Fajar Rivaldi</h1>
-    <p>IoT • Networking • Web Development</p>
-    <nav>
-      <a href="#about">About</a> |
-      <a href="#projects">Projects</a> |
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <img src="https://avatars.githubusercontent.com/u/17820398?s=200&v=4" alt="Profile Picture" class="profile-img" />
+      <h1>Fajar Rivaldi</h1>
+      <p class="subtitle">IoT • Networking • Web Development</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Focused on building digital systems that connect the physical world. Passionate about IoT, embedded hardware, and web-based solutions. Currently exploring fullstack development and smart device integration.</p>
-  </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm passionate about building digital systems that bridge the physical and virtual world — from IoT devices and embedded hardware to fullstack web applications. Currently focused on networking, predictive systems, and modern software engineering.</p>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>IoT Chili Monitor</strong> – Monitoring system using ESP32 and sensors for smart agriculture.  
-        <a href="https://github.com/Fajarvld/iot-cabai-predictor" target="_blank">View on GitHub</a>
-      </li>
-      <li>
-        <strong>Simple POS Web App</strong> – Laravel-based mini point of sale system.  
-        <a href="#" target="_blank">Coming soon</a>
-      </li>
-      <li>
-        <strong>This Portfolio Website</strong> – Built using GitHub Pages.  
-        <a href="https://github.com/Fajarvld/fajarvld.github.io" target="_blank">Repo</a>
-      </li>
-    </ul>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>IoT Chili Monitor</strong> – Smart agriculture monitor using ESP32 & sensors.
+          <a href="https://github.com/Fajarvld/iot-cabai-predictor" target="_blank">View on GitHub</a>
+        </li>
+        <li><strong>Simple POS Web App</strong> – Laravel-based mini POS system.
+          <a href="#">Coming soon</a>
+        </li>
+        <li><strong>This Portfolio Website</strong> – Built using HTML/CSS & GitHub Pages.
+          <a href="https://github.com/Fajarvld/fajarvld.github.io" target="_blank">Repo</a>
+        </li>
+      </ul>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:fajarrivaldi117@gmail.com">fajarrivaldi117@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/fajar-rivaldi-15ba0a195" target="_blank">linkedin.com/in/fajar-rivaldi-15ba0a195</a></p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:fajarrivaldi117@gmail.com">fajarrivaldi117@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/fajar-rivaldi-15ba0a195" target="_blank">linkedin.com/in/fajar-rivaldi-15ba0a195</a></p>
+      <div class="social-icons">
+        <a href="mailto:fajarrivaldi117@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/fajar-rivaldi-15ba0a195" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Fajarvld" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </section>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Fajar Rivaldi</p>
+    &copy; 2025 Fajar Rivaldi — All rights reserved.
   </footer>
 
 </body>
